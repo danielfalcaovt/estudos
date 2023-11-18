@@ -1,2 +1,16 @@
 @charset "UTF-8";
 /* CONFIGURAÇOES GERAIS*/
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: a◘rial;
+}
+html, body{
+    background: #233eff;
+    color: white;
+    width: 100vw;
+    height: 100vh;
+}
+h1{
+    padding: 10px;
+}

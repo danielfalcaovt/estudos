@@ -1,2 +1,5 @@
 @charset "UTF-8";
 /*APARELHO EM RETRATO*/
+body{
+    background:  url(../imagens/cev-portrait.jpg) center bottom/contain no-repeat;
+}
