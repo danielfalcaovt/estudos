@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <form action="script.js" method="post">
+
+    <div>
+        <label for="iest">Estado</label>
+        <select name="est" id="iest">
+            <optgroup label="Região Sudeste">
+                <option value="SP">Sao paulo</option>
+                <option selected value="RJ">Rio de janeiro</option>
+                <option value="ES">Espirito Santo</option>
+                <option value="MG">Minas gerais</option>
+            </optgroup>
+        </select>
+    </div>
+    <div>
+        <label for="iprof">Profissao</label>
+        <input type="text" name="prof" id="iprof" list="lst">
+        <datalist id="lst">
+            <option>Marinheiro</option>
+            <option>Exercito</option>
+            <option>Desenvolvedor</option>
+            <option>Policial</option>
+        </datalist>
+    </div>
+    <div>
+        <label for="areatxt">Text Area
+        </label>
+
+        <textarea name="areatxt" id="areatxt" cols="30" rows="10"></textarea>
+
+
+
+
+
+    </div>
+
+
+    </form>
+
+
+
+</body>
+</html>

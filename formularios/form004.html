@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <p>
+            <label for="nomecom"><p>Nome:</p></label>
+            <input required minlength="5" maxlength="32" autocomplete="name" type="text" name="nomec" id="nomecom">
+        </p>
+        <label for="mediaa">Media</label>
+        <input type="number" name="media" value="5" step="0.1"  size="5" placeholder="Nota" id="mediaa" min="0" max="10">
+        <p>
+            <label for="imes">Periodo letivo:</label>
+            <input type="month" value="2023-11" name="mes" id="imes">
+        </p>
+        <p>
+            <label for="diaprova">Dia da prova</label>
+            <input type="date" name="diadaprv" id="diaprova">
+        </p>
+        <p>
+            <label for="hora">horario da prova</label>
+            <input type="time" name="hora" id="ihora">
+        </p>
+        <p>
+    
+            <input type="submit" value="enviar">
+            <input type="reset" value="limpar">
+    
+</p> </form>
+
+</body>
+</html>

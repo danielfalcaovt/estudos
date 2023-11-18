@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="cadastro.php" method="post"><div>
+        
+            <label for="iano">Ano de nascimento</label>
+            <input type="number" oninput="calcIdade()" name="ano" min="1900" max="2023" id="iano">
+        <output id="idd"></output>
+        </div>
+    
+    </form>
+<script>
+    function calcIdade(){
+        let ano = new Date().getFullYear()
+        if(Number(iano.value) > 1900 && Number(iano.value) < ano){
+        idd.innerHTML = ano - Number(iano.value)
+        }else{
+            alert("Idade impossivel!")
+        }
+    }
+
+
+</script>
+</body>
+</html>
