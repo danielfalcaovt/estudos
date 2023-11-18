@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projeto Celular</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <main>
+      <nav>
+        <a href="./index.html">
+            <picture id="homebutton">
+                <source media="(max-width: 600px)" srcset="img/homebutton-peq.png" type="image/png">
+              <img class="butao" src="img/homebutton.png" alt="botao voltar ao inicio" />
+            </picture>
+        </a>
+
+
+        <picture  id="git">
+            <source media="(max-width: 600px )" srcset="img/git-peq.png" type="image/png">
+            <img class="butao" src="img/git.png" alt="botao para o github" />
+        </picture>
+
+        
+        <a onclick="clicou()" href="pagextra/pag001.html" target="tela">
+            <picture  id="insta">
+                <source media="(max-width: 600px )" srcset="img/instagram-peq.svg" type="image/svg+xml">
+              <img class="butao" src="img/instagram.svg" alt="" />
+            </picture>
+        </a></nav>
+ 
+
+   
+      <div id="celular">
+          <div id="capa">
+            <picture>
+                <source media="(max-width: 600px)" srcset="img/iphonecllr-peq.png" type="image/png">
+              <img id="cpp" src="img/iphonecllr.png" alt="Imagem iphone" />
+            </picture>
+              </div>
+              <div id="tela">
+          <iframe scrolling="no" name="tela" margin="0px" id="tll" srcdoc="<img style='height:98vh;width:100vw;' src='./img/homescreen.png' alt='tela iphone' />" frameborder="0"></iframe>
+          
+      </div>
+
+        </div>
+      </div>
+    </main>
+<script src="script.js"></script>
+</body>
+</html>

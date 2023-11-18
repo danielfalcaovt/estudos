@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input[value="Aplicar segurança"]{
+            background: green;
+            color: black;
+            font-weight: 900;
+        }
+        input[value="Derrubar site"]{
+            background: red;
+            color: black;
+            font-weight: 900;
+        }
+
+        input[value="Remover segurança"]{
+            background: yellow;
+            color: black;
+            font-weight: 900;
+        }
+        div{
+            background: black;
+            color: white;
+            height: 50px;
+            display: block;
+            margin-top: 20px;
+            width: 200px;
+            border-radius: 15px;
+            border: 2px solid red;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Segurança para scripts maliciosos</h1>
+    <h2>AVISO!!</h2>
+    <h3>Caso o "Derrubar site" seja rodado sem aplicar segurança o site vai cair!</h3>
+    <a href="derrubador.html" target="alvo"><input type="button" value="Derrubar site"></a>
+    <input type="button" onclick="seguro()" value="Aplicar segurança">
+    <input type="button" onclick="inseguro()" value="Remover segurança">
+    <iframe id="atk" name="alvo" srcdoc="<p>alvo</p> <input placeholder='Testar  funcionamento' type='text'></input>" frameborder="1">
+        <p>Seu dispositivo nao tem compatibilidade com iframe</p>
+    </iframe>
+    <div id="seg">Segurança do site:</div>
+
+    <script>
+        function clicar(){
+            let iff = document.querySelector('iframe#atk')
+            iff.src = "derrubador.html"
+            
+            setTimeout(() => {
+                document.window.alert("SUCESSO!")
+            }, 100);
+        }
+        function seguro(){
+            let iff = document.querySelector("iframe#atk")
+            iff.sandbox = "sandbox"
+            iff.reffererpolicy = "no-referrer"
+            alert("Segurança aplicada")
+            let seguranca = document.querySelector("div#seg")
+            seguranca.style.background = "green"
+            seguranca.innerHTML = "SEGURO!"
+            seguranca.style.border = "2px solid black"
+
+        }
+        function inseguro(){
+            let iff = document.querySelector("iframe#atk")
+            iff.sandbox = "allow-scripts"
+            iff.reffererpolicy = "none"
+            alert("SEGURANÇA REMOVIDA!!!!")
+            let seguranca = document.querySelector("div#seg")
+            seguranca.style.background = "red"
+            seguranca.innerHTML = "INSEGURO!"
+            seguranca.style.border = "2px solid black"
+        }
+
+
+</script>
+</body>
+</html>

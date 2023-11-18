@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minhas dores</title>
+    <style>
+        table{
+            position: relative;
+            width: max-content;
+            height: 250px;
+            border-collapse: collapse;
+        }
+        th{
+            padding: 10px 5px;
+            border: 2px solid black;
+        }
+        td{
+            height: 30px;
+            border: 1px solid black;
+            padding: 0px 5px;
+            max-width: 300px;
+        }
+
+        tfoot >tr> td{
+            text-align: center;
+        }
+#centro{
+    text-align: center;
+    background-color: black;
+    cursor: grab;
+}
+#centro:hover{
+    background-color: rgb(29, 29, 29);
+}
+.negado{
+    background: red;
+    color: white;
+}
+
+tbody > tr:nth-child(odd){
+    background: gray; 
+    color: white;
+}
+
+thead > tr > th {
+    position: sticky;
+    top: -1px;
+    background: white;
+    border: 2px solid black;
+}
+</style>
+</head>
+<body>
+    <table>
+        <caption>Minhas feridas</caption>
+        <thead>
+            <tr>
+                <th scope="col">A</th>
+                <th scope="col">B</th>
+                <th scope="col">C</th>
+                <th scope="col">D</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>X</td>
+                <td onclick="clicar()" id="centro">CLIQUE</td>
+                <td>Y</td>
+                <td>ZZ<strong>A</strong>ZZZ</td>
+            </tr>
+            <tr>
+                <td>XXX</td>
+                <td>YYY</td>
+                <td class="negado">NNN</td>
+                <td>YYY</td>
+            </tr>
+        
+            <tr>
+                <td>ZZZ</td>
+                <td>XXX</td>
+                <td class="negado">NNN</td>
+                <td>YYY</td>
+                
+                
+            </tr>
+        
+                <tr>
+                    <td>XXX</td>
+                    <td>YYY</td>
+                    <td>XXX</td>
+                    <td>YYY</td>
+                </tr>
+            <td>XXX</td>
+            <td>YYY</td>
+            <td>XXX</td>
+            <td>YYY</td>
+
+        </tr>
+            <tr>
+                <td>XXX</td>
+                <td>YYY</td>
+                <td>XXX</td>
+                <td>YYY</td>
+            <tr>
+                <td>XXX</td>
+                <td>YYY</td>
+                <td>XXX</td>
+                <td>YYY</td>
+    
+            </tr>
+            </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">
+                    E
+                </th>
+                <td>
+                    YYY
+                </td>
+
+            </tr>
+
+        </tfoot>
+
+    </table>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum quia labore doloremque sint obcaecati, nam aliquid nulla nesciunt eaque qui. Quod expedita dicta odit non? Quibusdam nemo ut reiciendis. Accusamus?
+    Provident quidem illum omnis, reiciendis quibusdam alias pariatur laboriosam cum? Ut, quibusdam. Laborum sint nemo odit consectetur labore, nam ullam quasi? Veniam, minus beatae voluptates ipsum consequuntur necessitatibus qui. Molestiae!
+    Quia natus tempore quisquam! Facilis natus deleniti architecto nam porro quis optio, minima vel magnam pariatur? Unde labore delectus iste. Dolore, eveniet quidem. Fuga at corporis mollitia sed animi? Culpa?
+    A dolorem, suscipit at optio eum necessitatibus non? Perferendis, commodi esse? Fuga eveniet maxime, iste ipsam facilis aut minima commodi? In ab libero minus, aperiam voluptas nostrum ut dicta consequatur?
+    Dolorum eius sit eum perspiciatis minima suscipit eligendi consequatur ipsam iure ipsa a aspernatur possimus quae, temporibus deserunt doloremque consequuntur quisquam quod commodi deleniti voluptate. Officia dignissimos nulla doloribus quisquam!
+    Id eius, iste ex illo saepe corrupti ullam iusto reiciendis nulla maiores autem officiis eum distinctio libero corporis incidunt aspernatur neque dignissimos provident repudiandae? Ducimus ex architecto ad blanditiis fugit!
+    Amet sapiente sit cum aliquid nisi officiis vitae quo, debitis odio mollitia ad fugiat, ipsum harum totam nam dolores animi, quam reiciendis provident soluta! Harum amet accusantium nesciunt qui ea?
+    Odio, praesentium, placeat facere distinctio, minus commodi aspernatur architecto enim libero nemo dignissimos recusandae soluta itaque minima pariatur unde repellendus? Excepturi culpa fuga aspernatur accusantium in quis doloremque provident fugit.
+    Illo, earum. Cum laudantium repellat ullam aliquid animi libero voluptate molestias. Enim aliquid, explicabo quasi ex excepturi natus saepe eaque fugit itaque repudiandae voluptatibus delectus totam et soluta aliquam rem!
+    Quisquam expedita dolorem soluta maxime at pariatur porro, id aperiam quidem delectus enim fuga optio iste sed ducimus provident corrupti illo ratione explicabo corporis esse distinctio nam eaque? Laborum, assumenda!
+    Sed ex fugit quam officiis tenetur inventore hic facere voluptatum eos eum laborum enim provident minus tempore fugiat mollitia sunt laboriosam doloribus ducimus harum, maxime placeat dolores? Minus, velit cumque.
+    Molestiae fugiat consequuntur saepe eaque totam ipsa alias labore porro! Veniam reiciendis sequi, provident magnam quia aperiam unde? Quae ratione tenetur accusamus! Vero est fuga nesciunt eaque porro qui dolorem.
+    Blanditiis iste veritatis suscipit doloremque sequi cumque, corrupti aliquid totam quos modi odit. Nulla odit molestias dolore repellat eos odio quis ad dolorem voluptates rerum. Aspernatur perspiciatis minus rerum molestias.
+    Non odit exercitationem quia at corrupti, voluptatum nihil dignissimos pariatur voluptates id nulla ea, eligendi omnis. Blanditiis hic, unde praesentium nobis suscipit fugit cumque possimus molestiae fugiat quo repudiandae sapiente.
+    Numquam ipsam eligendi iusto quia eveniet assumenda ab sapiente vero cumque velit atque tenetur maxime at voluptates fugit, esse eos nulla. Molestias voluptatem doloribus nam cum culpa quas nemo nesciunt.
+    Id nobis facilis libero adipisci, aperiam fugiat minima impedit nam quasi necessitatibus officia quo neque saepe, ipsam explicabo fugit! Numquam ipsam saepe quidem cumque incidunt voluptate fugit perspiciatis, porro repellendus.
+    Corrupti explicabo sint dolore hic magni assumenda suscipit error itaque voluptatem vel ad accusamus architecto quos voluptates, odio repudiandae eius modi quidem, eos veniam unde numquam similique. Assumenda, doloremque voluptatum?
+    Illum mollitia consequatur quas? Rem quos totam delectus, ex facilis mollitia at perferendis magnam explicabo tempore eius ut distinctio amet itaque, non eligendi? Aperiam, dignissimos a corrupti sit totam modi.
+    Aliquam eum facilis quas debitis ea quidem animi placeat non, enim deleniti ipsum nulla eligendi, odio quia aperiam expedita incidunt vel nobis quo hic laudantium blanditiis qui id. Asperiores, iste.
+    Consectetur facilis obcaecati a eveniet beatae, cupiditate animi cumque dolorum error architecto quod molestias dolores nulla minus velit quos pariatur mollitia blanditiis assumenda dicta corrupti accusamus doloremque. Id, odio modi.</p>
+    <script>
+    function clicar() {
+        let data = document.querySelector("td#centro")
+        data.style.background = "white"
+        data.style.color ="black"
+        data.style.cursor = "grabbing"
+        data.innerHTML = "VISUALIZACAO DE CONTEUDO"
+
+    }
+    </script>
+
+
+</body>
+</html>

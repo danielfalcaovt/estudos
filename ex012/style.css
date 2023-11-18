@@ -1,0 +1,10 @@
+div{
+    background-color: black;
+    display: inline-block;
+    padding: 50px ;
+    color: white;
+}
+div:hover{
+    background: rgb(44, 44, 44);
+
+}

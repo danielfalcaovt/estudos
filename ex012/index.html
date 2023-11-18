@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXERCICIO 12</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>AUDIOS COM HTML 5</h1>
+    <div onclick="clicar()" id="add">
+        <p>Ativar audio!</p>
+    </div>
+    <audio preload="metadata" controls id="som" >
+        <source src="audio/egypce.mp3" type="audio/mpeg">
+        <source src="audio/egypce.ogg" type="audio/ogg">
+        <p>Nao foi!</p>
+
+    </audio>
+    <h1>TESTE COM VIDEOS</h1>
+    <video preload="metadata" poster="/img/fundo-de-particulas-abstratas-tecnologia-realista_23-2148429738.jpg" autoplay height="330px" controls>
+        <source src="videos/video.mp4">
+        <source src="videos/video.ogv">
+        <p>Seu navegador nao possui compatibilidade com videos.</p>
+
+    </video>
+
+    <h1>VIDEOS HOSPEDADOS </h1>
+    
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/FdE5G95B7Mg?si=L95Ts4xjO1S7qDXB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <script>
+    let msc = document.querySelector("audio#som")
+
+function parimp(n) {
+    if (n%2==0) {
+        return "par"
+
+    }else {
+        return "impar"
+    }
+
+}
+let num = 0
+    function clicar() {
+    num ++
+    alert(num)
+        if (parimp(num) == "impar"){
+            msc.autoplay = true
+            msc.load()
+        }else if (parimp(num == "par")){
+            msc.autoplay = false
+            msc.stop()
+        }
+
+    }
+
+
+</script>
+
+
+</body>
+</html>
