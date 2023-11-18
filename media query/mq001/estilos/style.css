@@ -1,0 +1,28 @@
+@charset "UTF-8";
+*{
+    margin: 0px;
+    padding: 0px;
+}
+html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+main{
+    display: flex;
+    justify-content: center;
+}
+article{
+    max-width: 300px;
+    text-align: center;
+}
+header{
+    background: gray;
+    color: black;
+    text-align: center;
+}
+nav{
+    background: rgb(46, 46, 46);
+}
+nav> ul {
+    display: flex;
+    justify-content: space-around;
+}
